@@ -1,0 +1,39 @@
+﻿@model Agencia_Viagens01.Models.Usuario
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h2>Cadastrar Novo Usuário</h2>
+        </div>
+        <div class="card-body">
+            <form action="/Usuario/Criar" method="post">
+
+                <div class="form-group mb-3">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="Nome" class="form-control" required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="Senha" class="form-control" required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" class="form-control" required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="codigoFuncionario">Código do Funcionário</label>
+                    <input type="number" id="codigoFuncionario" name="CodigoFuncionario" class="form-control" required />
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">Salvar Usuário</button>
+                    <a href="/Usuario/Index" class="btn btn-secondary">Voltar para a Lista</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿@model Agencia_Viagens01.Models.Usuario
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2>Editar Usuário</h2>
+        </div>
+        <div class="card-body">
+            <form action="/Usuario/Editar" method="post">
+
+                <input type="hidden" name="Codigo" value="@Model.Codigo" />
+
+                <div class="form-group mb-3">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="Nome" class="form-control" value="@Model.Nome" required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="Senha" class="form-control" value="@Model.Senha" required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" class="form-control" value="@Model.Email" required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="codigoFuncionario">Código do Funcionário</label>
+                    <input type="number" id="codigoFuncionario" name="CodigoFuncionario" class="form-control" value="@Model.CodigoFuncionario" required />
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    <a href="/Usuario/Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
