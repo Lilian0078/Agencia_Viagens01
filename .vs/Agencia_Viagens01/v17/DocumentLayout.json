@@ -1,12 +1,85 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Agencia_Viagens01\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4F43CA-B9B1-45FA-9D41-081C8CB8DBCF}|Agencia_Viagens01.csproj|e:\\lanna\\projeto\\agencia_viagens01\\views\\produto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B4F43CA-B9B1-45FA-9D41-081C8CB8DBCF}|Agencia_Viagens01.csproj|solutionrelative:views\\produto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4F43CA-B9B1-45FA-9D41-081C8CB8DBCF}|Agencia_Viagens01.csproj|e:\\lanna\\projeto\\agencia_viagens01\\views\\produto\\excluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B4F43CA-B9B1-45FA-9D41-081C8CB8DBCF}|Agencia_Viagens01.csproj|solutionrelative:views\\produto\\excluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4F43CA-B9B1-45FA-9D41-081C8CB8DBCF}|Agencia_Viagens01.csproj|e:\\lanna\\projeto\\agencia_viagens01\\views\\produto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B4F43CA-B9B1-45FA-9D41-081C8CB8DBCF}|Agencia_Viagens01.csproj|solutionrelative:views\\produto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4F43CA-B9B1-45FA-9D41-081C8CB8DBCF}|Agencia_Viagens01.csproj|e:\\lanna\\projeto\\agencia_viagens01\\views\\produto\\criar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B4F43CA-B9B1-45FA-9D41-081C8CB8DBCF}|Agencia_Viagens01.csproj|solutionrelative:views\\produto\\criar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Views\\Produto\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Produto\\Index.cshtml",
+              "ToolTip": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Views\\Produto\\Index.cshtml",
+              "RelativeToolTip": "Views\\Produto\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-10T13:28:22.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Excluir.cshtml",
+              "DocumentMoniker": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Views\\Produto\\Excluir.cshtml",
+              "RelativeDocumentMoniker": "Views\\Produto\\Excluir.cshtml",
+              "ToolTip": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Views\\Produto\\Excluir.cshtml",
+              "RelativeToolTip": "Views\\Produto\\Excluir.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-10T13:27:51.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Views\\Produto\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Produto\\Editar.cshtml",
+              "ToolTip": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Views\\Produto\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Produto\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-10T13:27:28.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Criar.cshtml",
+              "DocumentMoniker": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Views\\Produto\\Criar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Produto\\Criar.cshtml",
+              "ToolTip": "E:\\LANNA\\PROJETO\\Agencia_Viagens01\\Views\\Produto\\Criar.cshtml",
+              "RelativeToolTip": "Views\\Produto\\Criar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-10T13:27:10.348Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
