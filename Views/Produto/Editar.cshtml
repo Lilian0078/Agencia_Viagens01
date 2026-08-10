@@ -1,0 +1,26 @@
+﻿@model Agencia_Viagens01.Models.Produto
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2>Editar Produto</h2>
+        </div>
+        <div class="card-body">
+            <form action="/Produto/Editar" method="post">
+
+                <input type="hidden" name="Codigo" value="@Model.Codigo" />
+
+                <div class="form-group mb-3">
+                    <label for="descricao">Descrição</label>
+                    <input type="text" id="descricao" name="Descricao" class="form-control" value="@Model.Descricao" required />
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    <a href="/Produto/Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
