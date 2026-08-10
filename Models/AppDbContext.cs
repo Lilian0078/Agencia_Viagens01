@@ -9,6 +9,8 @@ namespace Agencia_Viagens01.Models
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Categoria> Categoria { get; set; }
+
     }
 }
 

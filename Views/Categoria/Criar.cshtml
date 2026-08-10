@@ -1,0 +1,35 @@
+﻿<div class="card">
+    <div class="card-header bg-success text-white">
+        <h2>Cadastrar Nova Categoria</h2>
+    </div>
+    <div class="card-body">
+        <form action="/Categoria/Criar" method="post">
+
+            <div class="form-group mb-3">
+                <label for="hotel">Hotel</label>
+                <input type="text" id="hotel" name="Hotel" class="form-control" required />
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="aviao">Avião</label>
+                <input type="text" id="aviao" name="Aviao" class="form-control" required />
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="translado">Translado</label>
+                <input type="text" id="translado" name="Translado" class="form-control" required />
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="voucher">Voucher</label>
+                <input type="text" id="voucher" name="Voucher" class="form-control" required />
+            </div>
+
+            <div class="form-group mt-4">
+                <button type="submit" class="btn btn-primary">Salvar Categoria</button>
+                <a href="/Categoria/Index" class="btn btn-secondary">Voltar para a Lista</a>
+            </div>
+
+        </form>
+    </div>
+</div>
