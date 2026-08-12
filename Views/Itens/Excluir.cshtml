@@ -1,0 +1,41 @@
+﻿@model Agencia_Viagens01.Models.Itens
+
+<div class="container mt-5">
+    <div class="card border-danger">
+        <div class="card-header bg-danger text-white">
+            <h2>Excluir Item</h2>
+        </div>
+
+        <div class="card-body">
+            <h4 class="text-danger">Tem certeza que deseja excluir este item?</h4>
+            <hr />
+
+            <dl class="row">
+                <dt class="col-sm-3">Código do Produto:</dt>
+                <dd class="col-sm-9">@Model.CodProduto</dd>
+
+                <dt class="col-sm-3">Código do Pacote:</dt>
+                <dd class="col-sm-9">@Model.CodPacote</dd>
+
+                <dt class="col-sm-3">Quantidade:</dt>
+                <dd class="col-sm-9">@Model.Quantidade</dd>
+
+                <dt class="col-sm-3">Valor Unidade:</dt>
+                <dd class="col-sm-9">@Model.ValorUnidade</dd>
+            </dl>
+
+            <form action="/Itens/ExcluirConfirmado" method="post">
+                <input type="hidden" name="CodProduto" value="@Model.CodProduto" />
+                <input type="hidden" name="CodPacote" value="@Model.CodPacote" />
+
+                <button type="submit" class="btn btn-danger">
+                    Sim, Excluir
+                </button>
+
+                <a href="/Itens/Index" class="btn btn-secondary">
+                    Cancelar
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

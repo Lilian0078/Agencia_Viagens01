@@ -1,0 +1,58 @@
+﻿@model Agencia_Viagens01.Models.Itens
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2>Editar Item</h2>
+        </div>
+
+        <div class="card-body">
+            <form action="/Itens/Editar" method="post">
+
+                <input type="hidden" name="CodProduto" value="@Model.CodProduto" />
+
+                <div class="form-group mb-3">
+                    <label for="codPacote">Código do Pacote</label>
+                    <input type="number"
+                           id="codPacote"
+                           name="CodPacote"
+                           class="form-control"
+                           value="@Model.CodPacote"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number"
+                           id="quantidade"
+                           name="Quantidade"
+                           class="form-control"
+                           value="@Model.Quantidade"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="valorUnidade">Valor Unidade</label>
+                    <input type="number"
+                           id="valorUnidade"
+                           name="ValorUnidade"
+                           class="form-control"
+                           value="@Model.ValorUnidade"
+                           step="0.01"
+                           required />
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">
+                        Salvar Alterações
+                    </button>
+
+                    <a href="/Itens/Index" class="btn btn-secondary">
+                        Cancelar
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
