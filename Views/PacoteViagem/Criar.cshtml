@@ -1,0 +1,74 @@
+﻿@model Agencia_Viagens01.Models.PacoteViagem
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h2>Cadastrar Novo Pacote de Viagem</h2>
+        </div>
+
+        <div class="card-body">
+
+            <form action="/PacoteViagem/Criar" method="post">
+
+                <div class="form-group mb-3">
+                    <label for="origem">Origem</label>
+                    <input type="text"
+                           id="origem"
+                           name="Origem"
+                           class="form-control"
+                           maxlength="100"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="destino">Destino</label>
+                    <input type="text"
+                           id="destino"
+                           name="Destino"
+                           class="form-control"
+                           maxlength="100"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="dataInicio">Data de Início</label>
+                    <input type="date"
+                           id="dataInicio"
+                           name="DataInicio"
+                           class="form-control" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="dataFinal">Data Final</label>
+                    <input type="date"
+                           id="dataFinal"
+                           name="DataFinal"
+                           class="form-control" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="valorTotal">Valor Total</label>
+                    <input type="number"
+                           id="valorTotal"
+                           name="ValorTotal"
+                           class="form-control"
+                           step="0.01"
+                           min="0" />
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">
+                        Salvar Pacote
+                    </button>
+
+                    <a href="/PacoteViagem/Index"
+                       class="btn btn-secondary">
+                        Voltar para a Lista
+                    </a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

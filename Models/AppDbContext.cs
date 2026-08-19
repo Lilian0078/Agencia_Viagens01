@@ -11,6 +11,9 @@ namespace Agencia_Viagens01.Models
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Categoria> Categoria { get; set; }
         public DbSet<Produto> Produto { get; set; }
+        public DbSet<Itens> Itens { get; set; }
+        public DbSet<PacoteViagem> PacoteViagems { get; set; }
+
 
 
     }

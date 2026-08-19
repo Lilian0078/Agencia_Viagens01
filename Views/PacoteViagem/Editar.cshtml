@@ -1,0 +1,86 @@
+﻿@model Agencia_Viagens01.Models.PacoteViagem
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2>Editar Pacote de Viagem</h2>
+        </div>
+
+        <div class="card-body">
+
+            <form action="/PacoteViagem/Editar" method="post">
+
+                <input type="hidden"
+                       name="Codigo"
+                       value="@Model.Codigo" />
+
+                <div class="form-group mb-3">
+                    <label for="origem">Origem</label>
+                    <input type="text"
+                           id="origem"
+                           name="Origem"
+                           class="form-control"
+                           value="@Model.Origem"
+                           maxlength="100"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="destino">Destino</label>
+                    <input type="text"
+                           id="destino"
+                           name="Destino"
+                           class="form-control"
+                           value="@Model.Destino"
+                           maxlength="100"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="dataInicio">Data de Início</label>
+                    <input type="date"
+                           id="dataInicio"
+                           name="DataInicio"
+                           class="form-control"
+                           value="@(Model.DataInicio.ToString("yyyy-MM-dd"))" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="dataFinal">Data Final</label>
+                    <input type="date"
+                           id="dataFinal"
+                           name="DataFinal"
+                           class="form-control"
+                           value="@(Model.DataFinal.ToString("yyyy-MM-dd"))" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="valorTotal">Valor Total</label>
+                    <input type="number"
+                           id="valorTotal"
+                           name="ValorTotal"
+                           class="form-control"
+                           step="0.01"
+                           min="0"
+                           value="@(Model.ValorTotal.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture))" />
+                </div>
+
+                <div class="form-group mt-4">
+
+                    <button type="submit"
+                            class="btn btn-primary">
+                        Salvar Alterações
+                    </button>
+
+                    <a href="/PacoteViagem/Index"
+                       class="btn btn-secondary">
+                        Cancelar
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

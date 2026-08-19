@@ -1,0 +1,73 @@
+﻿@model Agencia_Viagens01.Models.PacoteViagem
+
+<div class="container mt-5">
+    <div class="card border-danger">
+
+        <div class="card-header bg-danger text-white">
+            <h2>Excluir Pacote de Viagem</h2>
+        </div>
+
+        <div class="card-body">
+
+            <h4 class="text-danger">
+                Tem certeza que deseja excluir este pacote?
+            </h4>
+
+            <hr />
+
+            <dl class="row">
+
+                <dt class="col-sm-3">Código:</dt>
+                <dd class="col-sm-9">
+                    @Model.Codigo
+                </dd>
+
+                <dt class="col-sm-3">Origem:</dt>
+                <dd class="col-sm-9">
+                    @Model.Origem
+                </dd>
+
+                <dt class="col-sm-3">Destino:</dt>
+                <dd class="col-sm-9">
+                    @Model.Destino
+                </dd>
+
+                <dt class="col-sm-3">Data de Início:</dt>
+                <dd class="col-sm-9">
+                    @(Model.DataInicio.ToString("dd/MM/yyyy") )
+                </dd>
+
+                <dt class="col-sm-3">Data Final:</dt>
+                <dd class="col-sm-9">
+                    @(Model.DataFinal.ToString("dd/MM/yyyy") )
+                </dd>
+
+                <dt class="col-sm-3">Valor Total:</dt>
+                <dd class="col-sm-9">
+                    @(Model.ValorTotal.ToString("C2") )
+                </dd>
+
+            </dl>
+
+            <form action="/PacoteViagem/ExcluirConfirmado"
+                  method="post">
+
+                <input type="hidden"
+                       name="Codigo"
+                       value="@Model.Codigo" />
+
+                <button type="submit"
+                        class="btn btn-danger">
+                    Sim, Excluir
+                </button>
+
+                <a href="/PacoteViagem/Index"
+                   class="btn btn-secondary">
+                    Cancelar
+                </a>
+
+            </form>
+
+        </div>
+    </div>
+</div>
