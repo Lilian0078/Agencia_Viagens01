@@ -1,0 +1,82 @@
+﻿@model Agencia_Viagens01.Models.Compra
+
+<div class="container mt-5">
+
+    <div class="card border-danger">
+
+        <div class="card-header bg-danger text-white">
+            <h2>Excluir Compra</h2>
+        </div>
+
+        <div class="card-body">
+
+            <h4 class="text-danger">
+                Tem certeza que deseja excluir esta compra?
+            </h4>
+
+            <hr />
+
+            <dl class="row">
+
+                <dt class="col-sm-3">
+                    Código:
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.Codigo
+                </dd>
+
+
+                <dt class="col-sm-3">
+                    Data da Compra:
+                </dt>
+
+                <dd class="col-sm-9">
+                    @(Model.DataCompra.ToString("dd/MM/yyyy") )
+                </dd>
+
+
+                <dt class="col-sm-3">
+                    Forma de Pagamento:
+                </dt>
+
+                <dd class="col-sm-9">
+                    @Model.FormaPagamento
+                </dd>
+
+
+                <dt class="col-sm-3">
+                    Valor Total:
+                </dt>
+
+                <dd class="col-sm-9">
+                    @(Model.ValorTotal?.ToString("C2"))
+                </dd>
+
+            </dl>
+
+            <form action="/Compra/ExcluirConfirmado"
+                  method="post">
+
+                <input type="hidden"
+                       name="Codigo"
+                       value="@Model.Codigo" />
+
+                <button type="submit"
+                        class="btn btn-danger">
+                    Sim, Excluir
+                </button>
+
+                <a href="/Compra/Index"
+                   class="btn btn-secondary">
+                    Cancelar
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+

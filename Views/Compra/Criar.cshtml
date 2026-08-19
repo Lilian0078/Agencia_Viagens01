@@ -1,0 +1,69 @@
+﻿@model Agencia_Viagens01.Models.Compra
+
+<div class="container mt-5">
+    <div class="card">
+
+        <div class="card-header bg-success text-white">
+            <h2>Cadastrar Nova Compra</h2>
+        </div>
+
+        <div class="card-body">
+
+            <form action="/Compra/Criar" method="post">
+
+                <div class="form-group mb-3">
+                    <label for="dataCompra">Data da Compra</label>
+
+                    <input type="date"
+                           id="dataCompra"
+                           name="DataCompra"
+                           class="form-control"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="formaPagamento">
+                        Forma de Pagamento
+                    </label>
+
+                    <input type="text"
+                           id="formaPagamento"
+                           name="FormaPagamento"
+                           class="form-control"
+                           maxlength="100"
+                           required />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="valorTotal">
+                        Valor Total
+                    </label>
+
+                    <input type="number"
+                           id="valorTotal"
+                           name="ValorTotal"
+                           class="form-control"
+                           step="0.01"
+                           min="0"
+                           required />
+                </div>
+
+                <div class="form-group mt-4">
+
+                    <button type="submit"
+                            class="btn btn-primary">
+                        Salvar Compra
+                    </button>
+
+                    <a href="/Compra/Index"
+                       class="btn btn-secondary">
+                        Voltar para a Lista
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
